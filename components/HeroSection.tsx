@@ -143,44 +143,6 @@ export default function HeroSection() {
               </a>
             </div>
 
-            {/* Social proof */}
-            <div className="flex items-center gap-3 pt-1">
-              <div className="flex">
-                {["#8A3FFC", "#20F281", "#2563FF", "#A970FF"].map((c, i) => (
-                  <div
-                    key={i}
-                    className="rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0"
-                    style={{
-                      width: 28, height: 28,
-                      background: `radial-gradient(circle at 35% 35%, ${c}, rgba(3,4,7,0.8))`,
-                      border: "2px solid #030407",
-                      marginLeft: i === 0 ? 0 : -8,
-                    }}
-                  >
-                    {["A", "B", "C", "D"][i]}
-                  </div>
-                ))}
-              </div>
-              <div>
-                <div className="flex gap-0.5 mb-1">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <svg key={s} width="11" height="11" viewBox="0 0 24 24" fill="#A970FF">
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                  ))}
-                </div>
-                <p
-                  className="font-semibold"
-                  style={{
-                    fontSize: "0.75rem",
-                    color: "rgba(212,218,238,0.56)",
-                    letterSpacing: "-0.01em",
-                  }}
-                >
-                  4.9/5 from 10K+ users
-                </p>
-              </div>
-            </div>
           </div>
 
           {/* ── Right: Phone mockup ── */}
